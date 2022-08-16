@@ -19,10 +19,6 @@ fn panic(info: &PanicInfo) -> ! {
     rust_os::test_panic_handler(info)
 }
 
-fn test_runner(tests: &[&dyn Fn()]) {
-    unimplemented!();
-}
-
 #[test_case]
 fn test_println() {
     println!("test_println output");
